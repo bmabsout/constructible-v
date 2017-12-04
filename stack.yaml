@@ -3,6 +3,6 @@ nix:
   packages: []
   shell-file: shell.nix
 
-resolver: ghc-8.0.1
+resolver: ghc-8.0.2
 packages:
 - '.'
