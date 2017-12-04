@@ -20,6 +20,7 @@ module ConstructibleV
     , create
     , pattern (:>)
     , pattern Nil
+    , module Linear.V
     ) where
 
 import Linear.V
