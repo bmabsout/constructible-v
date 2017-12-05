@@ -16,7 +16,7 @@
 {-# LANGUAGE AllowAmbiguousTypes    #-}
 
 module ConstructibleV
-    ( construct
+    ( vec
     , create
     , pattern (:>)
     , pattern Nil
@@ -61,9 +61,9 @@ type family ErrorIfUnequal (a :: Nat) (b :: Nat)
 empty :: SizedList 0 a 
 empty = SizedList []
 
-construct :: (Make 1 a f) => a -> f
-construct = make empty
-{-# INLINE construct #-}
+vec :: (Make 1 a f) => a -> f
+vec = make empty
+{-# INLINE vec #-}
 
 
 type family Length (a :: [k]) = (n::Nat) where
